@@ -29,6 +29,10 @@ RUN curl -sSL $ZOOM_URL -o /tmp/zoom_setup.deb
 RUN dpkg -i /tmp/zoom_setup.deb
 RUN apt-get -f install
 
+# install Japanese font
+RUN apt-get -y install fonts-ipafont
+RUN fc-cache -fv
+
 COPY scripts/ /var/cache/zoom-us/
 COPY entrypoint.sh /sbin/entrypoint.sh
 RUN chmod 755 /sbin/entrypoint.sh
