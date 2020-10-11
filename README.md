@@ -1,3 +1,6 @@
+This forked repository allows you to use Japanese fonts(IPAex) in the following Docker image.
+If you want to use it, build container yourself with this repo's url.
+
 This project is fully inspired of [sameersbn](https://github.com/sameersbn) [Skype](https://github.com/sameersbn/docker-skype)'s containerization.
 
 # mdouchement/zoom-us
